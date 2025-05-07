@@ -14,7 +14,7 @@ prompt = ChatPromptTemplate.from_messages([
 
 def generate_response(question, api_key, model, temperature, max_tokens):
 
-    llm = ChatGroq(model = model, groq_api_key = api_key)
+    llm = ChatGroq(model = model, groq_api_key = api_key, temperature=temperature, max_tokens=max_tokens)
     output_parser = StrOutputParser()
     chain = prompt|llm|output_parser
     answer = chain.invoke({'question': question})

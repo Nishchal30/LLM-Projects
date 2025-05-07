@@ -13,3 +13,7 @@ wikipedia
 duckduckgo-search
 mysql-connector-python
 SQLAlchemy
+validators
+unstructured
+youtube-transcript-api
+pytube
